@@ -49,5 +49,5 @@ export default function useAuth() {
     await supabase.auth.signOut();
   };
 
-  return { session, setSession, signInWithGitHub, profileFromGitHub, signOut };
+  return { session, setSession, signInWithGitHub, profileFromGitHub, signOut, errorMessage };
 }
